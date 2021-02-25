@@ -12,6 +12,8 @@
     <Compile Include="Exercise2a.fs" />
     <Compile Include="Exercise2b.fs" />
     <Compile Include="Exercise2c.fs" />
+    <Compile Include="Session3.fs" />
+    <Compile Include="Exercise3.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
