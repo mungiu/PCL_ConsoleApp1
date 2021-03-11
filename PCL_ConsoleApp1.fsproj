@@ -14,6 +14,8 @@
     <Compile Include="Exercise2c.fs" />
     <Compile Include="Session3.fs" />
     <Compile Include="Exercise3.fs" />
+    <Compile Include="Lesson 5.fs" />
+    <Compile Include="Exercise 5.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
