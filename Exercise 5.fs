@@ -4,7 +4,9 @@
 // Call the new function pclAreaR
 
 // convert PclShape to use records
-type Shapes = RightTriangle | Rectangle
+//union type
+type Shapes = RightTriangle | Rectangle 
+// records type
 type ShapeRecords = {length: float; width: float; shape: Shapes}
 
 let rectangle = {length = 2.0; width = 2.0; shape = Rectangle}

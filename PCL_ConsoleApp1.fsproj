@@ -19,6 +19,8 @@
     <Compile Include="DTGCafe.fs" />
     <Compile Include="Lesson 5.fs" />
     <Compile Include="Exercise 5.fs" />
+    <Compile Include="Lesson 6.fs" />
+    <Compile Include="Exercise 6a.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
