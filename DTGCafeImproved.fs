@@ -55,7 +55,7 @@ let getDrinkTypeString cocktail =
 
 let printReceipt cocktailRecord quantity =
     match cocktailRecord with
-    | _ -> printfn "Please pay: DKK%.2f for your %d %s with coffee drink(s). Thanks!" 
+    | _-> printfn "Please pay: DKK%.2f for your %d %s with milk drink(s). Thanks!" 
             (price cocktailRecord)
             quantity 
             (getDrinkTypeString cocktailRecord)

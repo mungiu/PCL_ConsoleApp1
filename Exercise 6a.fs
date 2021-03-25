@@ -11,6 +11,19 @@ let rec sumIntegerTree tree =
     | Node (data, left, right) 
         -> data + sumIntegerTree left + sumIntegerTree right
 
+// using tuples
+let countWordLetterTuples (str:string) =
+    let wordCount = str.Split [|' '|]
+    let letterCount = wordCount |> Array.sumBy (fun w -> w.Length)
+    (wordCount.Length, letterCount)
+countWordLetterTuples "asd asd"
+// using records
+type tempR = {wordCount: int; letterCount: int}
+let countWordLetterRecords (str:string) =
+    let wordCount = str.Split [|' '|]
+    let letterCount = wordCount |> Array.sumBy (fun w -> w.Length)
+    {wordCount = wordCount.Length; letterCount = letterCount}
+countWordLetterRecords "dsa dsa"
 // Example to be used fo Mini Project - CONCURRENCY is achieved here
 // CONCURENCY - important when scalability and large amount of messages are used
 // simple asynchronicity can be used, but that is NOT concurrent
