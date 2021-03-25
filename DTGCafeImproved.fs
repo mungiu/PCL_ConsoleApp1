@@ -55,32 +55,10 @@ let getDrinkTypeString cocktail =
 
 let printReceipt cocktailRecord quantity =
     match cocktailRecord with
-    | CCR (ccr:CoffeeCocktailRecord)
-        -> printfn "Please pay: DKK%f for your %d %s with coffee drink(s). Thanks!" 
+    | _ -> printfn "Please pay: DKK%.2f for your %d %s with coffee drink(s). Thanks!" 
             (price cocktailRecord)
             quantity 
             (getDrinkTypeString cocktailRecord)
-    | TCR (tcr:TeaCocktailRecord)
-        -> printfn "Please pay: DKK%f for your %d %s with tea drink(s). Thanks!" 
-            (price cocktailRecord)
-            quantity 
-            (getDrinkTypeString cocktailRecord)
-    | JCR (jcr:JuiceCocktailRecord)
-        -> printfn "Please pay: DKK%f for your %d %s with juice drink(s). Thanks!" 
-            (price cocktailRecord)
-            quantity 
-            (getDrinkTypeString cocktailRecord)
-    | SCR (scr:SodaCocktailRecord)
-        -> printfn "Please pay: DKK%f for your %d %s with soda drink(s). Thanks!" 
-            (price cocktailRecord)
-            quantity 
-            (getDrinkTypeString cocktailRecord)
-    | MCR (mcr:MilkCocktailRecord)
-        -> printfn "Please pay: DKK%f for your %d %s with milk drink(s). Thanks!" 
-            (price cocktailRecord)
-            quantity 
-            (getDrinkTypeString cocktailRecord)
-    | None -> printfn "Bye, come again!"
 
 type CoffeeMessage = 
     | OrderDrink of CocktailRecord * int // Drink, qty
@@ -105,3 +83,4 @@ let CoffeeAgent =
 
 let message01 = OrderDrink (CCR {drink=Milk; price=2.0; size=Small; vatPercentage=20.0}, 2)
 CoffeeAgent.Post(message01);;
+// let! rep = CoffeeAgent.PostAndAsyncReply( fun -> repChan -> message2)

@@ -1,6 +1,5 @@
 ﻿module Exercise_6a
 
-
 type IntegerTree = 
     | Node of int * IntegerTree * IntegerTree
     | Empty
@@ -42,7 +41,8 @@ type CounterMessage =
     | Count of int
     | Reset
 
-// message queues in architecture are used to separate parts of applications
+// Message queues in architecture are used to separate parts of applications
+// Here we are using our own COnstructor functions
 let counterAgent =
     new Agent<_>(fun inbox ->
         let rec loop n = async {
