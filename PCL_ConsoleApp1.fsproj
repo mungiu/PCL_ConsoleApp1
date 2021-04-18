@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="MidTestPractice\01aExercisePCL1.fs" />
     <Compile Include="Session1.fs" />
     <Compile Include="Exercise2.fs" />
     <Compile Include="Session2.fs" />
