@@ -1,5 +1,6 @@
 ﻿module Exercise4
 
+// DISCRIMINATED UNIONS - like enums on steroids
 //type PclRightTriangle = float * float
 //type PclRectangle = float * float 
 type PclShape = RightTriangle of float * float | Rectangle of float * float
@@ -25,6 +26,7 @@ perimeter rectangle
 
 
 // convert PclShape to use records
+// RECORDS - containers for a set of name:value pairs
 type Shapes = RightTriangle | Rectangle
 type ShapeRecords = {length: float; width: float; shape: Shapes}
 

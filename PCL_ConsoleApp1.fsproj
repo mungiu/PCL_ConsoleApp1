@@ -13,10 +13,10 @@
     <Compile Include="Exercise2a_StringToUpper.fs" />
     <Compile Include="Exercise2b_SUM_ADD_TAKE_LIST.fs" />
     <Compile Include="Exercise2c_FOLD_MAP_FILTER.fs" />
-    <Compile Include="Session3.fs" />
-    <Compile Include="Exercise3.fs" />
-    <Compile Include="Session4.fs" />
-    <Compile Include="Exercise4.fs" />
+    <Compile Include="Session3_CLOSURE_MAP_FILTER_FOLD.fs" />
+    <Compile Include="Exercise3_CLOSURE_PRIME_FIBONACCI.fs" />
+    <Compile Include="Session4_PIPELINING_COMPOSITION_FOLDERSIZE.fs" />
+    <Compile Include="Exercise4_DISCRIMINATED_UNIONS_RECORDS.fs" />
     <Compile Include="DTGCafe.fs" />
     <Compile Include="Lesson 5.fs" />
     <Compile Include="Exercise 5.fs" />
