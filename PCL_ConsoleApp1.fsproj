@@ -9,10 +9,10 @@
     <Compile Include="MidTestPractice\01aExercisePCL1.fs" />
     <Compile Include="Session1.fs" />
     <Compile Include="Exercise2.fs" />
-    <Compile Include="Session2.fs" />
-    <Compile Include="Exercise2a.fs" />
-    <Compile Include="Exercise2b.fs" />
-    <Compile Include="Exercise2c.fs" />
+    <Compile Include="Session2_Factorial.fs" />
+    <Compile Include="Exercise2a_StringToUpper.fs" />
+    <Compile Include="Exercise2b_SUM_ADD_TAKE_LIST.fs" />
+    <Compile Include="Exercise2c_FOLD_MAP_FILTER.fs" />
     <Compile Include="Session3.fs" />
     <Compile Include="Exercise3.fs" />
     <Compile Include="Session4.fs" />

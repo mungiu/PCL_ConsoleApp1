@@ -40,10 +40,10 @@ pclFilter isEven [0;1;2;3;4;5]
 
 //sum of all numbers [1;2;3]
 //looks are the list
-let rec pclFold f init lst =
+let rec pclFold f accumulator lst =
     match lst with
-    | [] -> init
-    | head::tail -> pclFold f (f init head) tail
+    | [] -> accumulator
+    | head::tail -> pclFold f (f accumulator head) tail
 
 //passing in a lambda funtion that adds two numbers, the initial favlue 0
 pclFold (fun x y -> x + y) 0 [1;2;3]  //returns the sum of the list
