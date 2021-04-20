@@ -9,14 +9,14 @@ type Drink =
     | Soda
     | Milk
 
-//creating record type
+// creating record type
 type CoffeeCocktailRecord = {drink:Drink; price:float; size:Size; vatPercentage:float}
 type TeaCocktailRecord    = {drink:Drink; price:float; size:Size; vatPercentage:float}
 type JuiceCocktailRecord  = {drink:Drink; price:float; size:Size; vatPercentage:float}
 type SodaCocktailRecord   = {drink:Drink; price:float; size:Size; vatPercentage:float}
 type MilkCocktailRecord   = {drink:Drink; price:float; size:Size; vatPercentage:float}
 
-//creating universal record type
+// discriminated union of records
 type CocktailRecord = 
     | CCR of CoffeeCocktailRecord
     | TCR of TeaCocktailRecord

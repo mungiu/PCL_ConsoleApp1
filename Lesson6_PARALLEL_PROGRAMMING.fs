@@ -16,18 +16,18 @@ let isPrimeNumber x =
 let numbers = [| for i in 10000000..10004000 -> i|]
 
 // NON-OPTIMIZED version
-ResetStopWatch()
+ResetStopWatch()    // start
 let primeInfo = 
     numbers
     |> Array.map (fun x -> (x, isPrimeNumber x))
-showTime()
+showTime()          // finish
 
 //OPTIMIZED version
-ResetStopWatch()
+ResetStopWatch()    // start
 let primeInfoOptimized = 
     numbers
     |> Array.Parallel.map (fun x -> (x, isPrimeNumber x))
-showTime()
+showTime()          // finish
 
 // NOTE this will not work in .NET Core 3.0
 // ----------------------------------------

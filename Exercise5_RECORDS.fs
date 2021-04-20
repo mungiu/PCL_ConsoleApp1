@@ -4,7 +4,7 @@
 // Call the new function pclAreaR
 
 // convert PclShape to use records
-//union type
+// discriminatedunion type
 type Shapes = RightTriangle | Rectangle 
 // records type
 type ShapeRecords = {length: float; width: float; shape: Shapes}

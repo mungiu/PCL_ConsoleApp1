@@ -18,14 +18,13 @@ type Drinks =
     | Milk
 
 type DrinkRecords = {Drink : Drinks; Size: Size; Price: float}
+
 let CoffeeDrink1 = { Drink = Coffee; Size = Small; Price = 1.0}
 let CoffeeDrink2 = { Drink = Coffee; Size = Medium; Price = 2.0}
 let CoffeeDrink3 = { Drink = Coffee; Size = Large; Price = 3.0}
-
 let TeaDrink1 = { Drink = Tea; Size = Small; Price = 1.0}
 let TeaDrink2 = { Drink = Tea; Size = Medium; Price = 2.0}
 let TeaDrink3 = { Drink = Tea; Size = Large; Price = 4.0}
-
 let JuiceDrink1 = { Drink = Juice; Size = Small; Price = 1.0}
 let JuiceDrink2 = { Drink = Juice; Size = Medium; Price = 5.0}
 let JuiceDrink3 = { Drink = Juice; Size = Large; Price = 10.0}

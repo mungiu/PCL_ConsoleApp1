@@ -18,10 +18,10 @@
     <Compile Include="Session4_PIPELINING_COMPOSITION_FOLDERSIZE.fs" />
     <Compile Include="Exercise4_DISCRIMINATED_UNIONS_RECORDS.fs" />
     <Compile Include="DTGCafe.fs" />
-    <Compile Include="Lesson 5.fs" />
-    <Compile Include="Exercise 5.fs" />
-    <Compile Include="Lesson 6.fs" />
-    <Compile Include="Exercise 6a.fs" />
+    <Compile Include="Lesson5_TAILRECURSIVE_CONTINUATION_SEQUENCES.fs" />
+    <Compile Include="Exercise5_RECORDS.fs" />
+    <Compile Include="Lesson6_PARALLEL_PROGRAMMING.fs" />
+    <Compile Include="Exercise6a_TUPLES_RECORDS_TREES_MAILBOXPROCESSOR.fs" />
     <Compile Include="DTGCafeImproved.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
