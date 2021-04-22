@@ -37,11 +37,12 @@ let sizeOfFolderPiped folder =
 //  ▪ use the pipe-backward operator
 printfn "The result of sprintf is %s" (sprintf "(%d, %d)" 1 2)
 printfn "The result of sprintf is %s" <| sprintf "(%d, %d)" 1 2
+// printfn "The result of sprintf is %s" |> sprintf "(%d, %d)" 1 2  // THIS WILL NOT WORK
 
 
 //////////    THE GOOD WAY TO DO IT USING  >>   ////////////
 
-// (>>) joins two functions together function on the left is called first AKA:  x |> f |> g = (f >> g) x
+// (>>) joins two functions together, function on the left is called first like: x |> f |> g = (f >> g) x
 let sizeOfFolderComposed (*No Parameters!*) =
     let getFiles folder = Directory.GetFiles(folder, "*.*", SearchOption.AllDirectories)  
         // The result of this expression is a function that takes

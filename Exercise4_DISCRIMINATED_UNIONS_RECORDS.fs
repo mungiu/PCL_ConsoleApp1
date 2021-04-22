@@ -6,7 +6,9 @@
 //let pclShape' = PclRectangle (0.5, 1.0, 1.0)
 
 // DISCRIMINATED UNIONS - like enums on steroids
-type PclShape = RightTriangle of float * float | Rectangle of float * float
+type PclShape = 
+    | RightTriangle of float * float 
+        | Rectangle of float * float
 
 let rectangle = Rectangle(0.5, 0.5)
 let rightTriangle = RightTriangle(2.0, 5.0)
