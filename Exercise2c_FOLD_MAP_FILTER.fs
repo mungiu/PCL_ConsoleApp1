@@ -2,10 +2,8 @@
 
 let rec myFold foldFn accumulator iterable =
     match iterable with
-    | [] -> 
-        accumulator //if empty return accumulator
-    | head::tail ->
-        foldFn head (myFold foldFn 0 tail)
+    | [] -> accumulator //if empty return accumulator
+    | head::tail -> foldFn head (myFold foldFn 0 tail)
 myFold (+) 0 [1; 2; 3] 
 
 
@@ -16,20 +14,16 @@ let addNum10 z : int = z + 10
 // and return a new resultant list 
 let rec mySumWithFold foldFn accumulator iterable =
     match iterable with
-    | [] -> 
-        accumulator //if empty return accumulator
-    | head::tail ->
-        foldFn head :: mySumWithFold foldFn [] tail
+    | [] -> accumulator //if empty return accumulator
+    | head::tail -> foldFn head :: mySumWithFold foldFn [] tail
 mySumWithFold addNum10 [] [1; 2; 3]
 
 
 
 let rec myFoldBack foldFn accumulator iterable =
     match iterable with
-    | [] -> 
-        accumulator //if empty return accumulator
-    | head::tail ->
-        accumulator + foldFn (myFoldBack foldFn 0 tail) head 
+    | [] -> accumulator //if empty return accumulator
+    | head::tail -> accumulator + foldFn (myFoldBack foldFn 0 tail) head 
 myFoldBack (+) 0 [1; 2; 3]
 
 

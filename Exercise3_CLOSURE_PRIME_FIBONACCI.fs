@@ -23,6 +23,7 @@ let isPrime n =
     let rec check i =
         i > n/2 || (n % i <> 0 && check (i + 1))
     check 2
+
 let nums = [ 16; 17; 3; 4; 2; 5; 11; 6; 7; 18; 13; 14; ]
 let rec primesUpTo n =
     match n with

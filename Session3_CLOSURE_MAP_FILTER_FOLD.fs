@@ -30,7 +30,7 @@ let isEven n =
 let rec pclFilter predicate lst =
     match lst with
     | [] -> []
-    | head::tail -> if predicate  head then head::pclFilter predicate tail
+    | head::tail -> if predicate head then head::pclFilter predicate tail
                     else pclFilter predicate tail
 pclFilter isEven [0;1;2;3;4;5]
 
@@ -44,7 +44,6 @@ let rec pclFold f accumulator lst =
     match lst with
     | [] -> accumulator
     | head::tail -> pclFold f (f accumulator head) tail
-
 //passing in a lambda funtion that adds two numbers, the initial favlue 0
 pclFold (fun x y -> x + y) 0 [1;2;3]  //returns the sum of the list
 
@@ -53,5 +52,4 @@ let closureFun x =
     let multi x y = x * y
     let triple = multi 3
     printfn "%d" (triple 5)
-
 closureFun 5
