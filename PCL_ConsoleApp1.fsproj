@@ -6,24 +6,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="MidTestPractice\01aExercise.fs" />
-    <Compile Include="TestQuestionAnsweres.fs" />
-    <Compile Include="Session1.fs" />
-    <Compile Include="Exercise2.fs" />
-    <Compile Include="Session2_Factorial.fs" />
-    <Compile Include="Exercise2a_StringToUpper.fs" />
-    <Compile Include="Exercise2b_SUM_ADD_TAKE_LIST.fs" />
-    <Compile Include="Exercise2c_FOLD_MAP_FILTER.fs" />
-    <Compile Include="Session3_CLOSURE_MAP_FILTER_FOLD.fs" />
-    <Compile Include="Exercise3_CLOSURE_PRIME_FIBONACCI.fs" />
-    <Compile Include="Session4_PIPELINING_COMPOSITION_FOLDERSIZE.fs" />
-    <Compile Include="Exercise4_DISCRIMINATED_UNIONS_RECORDS.fs" />
-    <Compile Include="DTGCafe.fs" />
-    <Compile Include="Lesson5_TAILRECURSIVE_CONTINUATION_SEQUENCES.fs" />
-    <Compile Include="Exercise5_RECORDS.fs" />
-    <Compile Include="Lesson6_PARALLEL_PROGRAMMING.fs" />
-    <Compile Include="Exercise6a_TUPLES_RECORDS_TREES_MAILBOXPROCESSOR.fs" />
-    <Compile Include="DTGCafeImproved.fs" />
+    <Compile Include="ClassWork\TestQuestionAnsweres.fs" />
+    <Compile Include="ClassWork\Session1.fs" />
+    <Compile Include="ClassWork\Exercise2.fs" />
+    <Compile Include="ClassWork\Session2_Factorial.fs" />
+    <Compile Include="ClassWork\Exercise2a_StringToUpper.fs" />
+    <Compile Include="ClassWork\Exercise2b_SUM_ADD_TAKE_LIST.fs" />
+    <Compile Include="ClassWork\Exercise2c_FOLD_MAP_FILTER.fs" />
+    <Compile Include="ClassWork\Session3_CLOSURE_MAP_FILTER_FOLD.fs" />
+    <Compile Include="ClassWork\Exercise3_CLOSURE_PRIME_FIBONACCI.fs" />
+    <Compile Include="ClassWork\Session4_PIPELINING_COMPOSITION_FOLDERSIZE.fs" />
+    <Compile Include="ClassWork\Exercise4_DISCRIMINATED_UNIONS_RECORDS.fs" />
+    <Compile Include="ClassWork\DTGCafe.fs" />
+    <Compile Include="ClassWork\Lesson5_TAILRECURSIVE_CONTINUATION_SEQUENCES.fs" />
+    <Compile Include="ClassWork\Exercise5_RECORDS.fs" />
+    <Compile Include="ClassWork\Lesson6_PARALLEL_PROGRAMMING.fs" />
+    <Compile Include="ClassWork\Exercise6a_TUPLES_RECORDS_TREES_MAILBOXPROCESSOR.fs" />
+    <Compile Include="ClassWork\DTGCafeImproved.fs" />
+    <Compile Include="MidTestPractice\01b_list_concat.fs" />
+    <Compile Include="MidTestPractice\01a_recursion.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
