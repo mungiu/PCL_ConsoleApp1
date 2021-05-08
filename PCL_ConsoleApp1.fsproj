@@ -23,10 +23,11 @@
     <Compile Include="ClassWork\Lesson6_PARALLEL_PROGRAMMING.fs" />
     <Compile Include="ClassWork\Exercise6a_TUPLES_RECORDS_TREES_MAILBOXPROCESSOR.fs" />
     <Compile Include="ClassWork\DTGCafeImproved.fs" />
-    <Compile Include="MidTestPractice\02b_rec_list.fs" />
-    <Compile Include="MidTestPractice\02a_strings.fs" />
-    <Compile Include="MidTestPractice\01b_list_concat.fs" />
     <Compile Include="MidTestPractice\01a_recursion.fs" />
+    <Compile Include="MidTestPractice\01b_list_concat.fs" />
+    <Compile Include="MidTestPractice\02a_strings.fs" />
+    <Compile Include="MidTestPractice\02b_rec_list.fs" />
+    <Compile Include="MidTestPractice\02c.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

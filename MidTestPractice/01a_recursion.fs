@@ -13,26 +13,26 @@ let c = a + b // c = 5 + 15 = 20
 
 let addNum1 number =
     1 + number
-addNum1 5
+printfn "%A" (addNum1 5)
 //val addNum1 : number:int -> int
 //val it : int = 6
 
 let addNum10 number:int =
     number + 10
-addNum10 10
+printfn "%A" (addNum10 10)
 //val addNum10 : number:int -> int
 //val it : int = 20
 
 let addNum20 number:int =
     addNum10 (addNum10 number)
-addNum20 10
+printfn "%A" (addNum20 10)
 //val addNum20 : number:int -> int
 //val it : int = 30
 
 let max2 (first:int) (second:int) =
     if first > second then first
     else second
-max2 1 10
+printfn "%A" (max2 1 10)
 //val max2 : first:int -> second:int -> int
 //val it : int = 10
 
@@ -41,8 +41,8 @@ let evenOrOdd (integer:int) : string  =
     | int when integer % 2 = 0 -> "even"
     | int when integer % 2 <> 0 -> "odd"
     | _ -> null
-evenOrOdd 2
-evenOrOdd 3
+printfn "%A" (evenOrOdd 2)
+printfn "%A" (evenOrOdd 3)
 //> 
 //val evenOrOdd : integer:int -> string
 //val it : string = "odd"
@@ -52,8 +52,8 @@ evenOrOdd 3
 
 let evenOrOddSimple integer =
     if integer % 2 = 0 then "even" else "odd"
-evenOrOddSimple 2
-evenOrOddSimple 3
+printfn "%A" (evenOrOddSimple 2)
+printfn "%A" (evenOrOddSimple 3)
 //> 
 //val evenOrOddSimple : integer:int -> string
 //val it : string = "even"
@@ -65,7 +65,7 @@ evenOrOddSimple 3
 let addXY (x:int) (y:int) =
     printfn "%A %A" x y
     x + y
-addXY 5 3
+printfn "%A" (addXY 5 3)
 //> 
 //5 3
 //val addXY : x:int -> y:int -> int
@@ -85,4 +85,4 @@ let rec addNum10Rec j k =
     match j with
     | 0 -> k
     | _ -> addNum10Rec (j-1) (addNum10x k)
-addNum10Rec 3 5
+printfn "%A" (addNum10Rec 3 5)
