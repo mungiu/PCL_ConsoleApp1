@@ -1,4 +1,4 @@
-﻿module Exercise3
+﻿module _03
 
 let vowelPredicate c =
     match c with
@@ -8,15 +8,22 @@ let vowelPredicate c =
     | 'o' -> true
     | 'u' -> true
     | c -> false
+
 let rec countNumOfVowels str init =
     match str with
     | "" -> init
     | _ -> if vowelPredicate str.[0] 
             then countNumOfVowels (str.[1..String.length str-1]) init + 1 
             else countNumOfVowels (str.[1..String.length str-1]) init
-countNumOfVowels "Higher-order functions can take and return functions of any order" 0
+printfn "%A" (countNumOfVowels "Higher-order functions can take and return functions of any order" 0)
 
-
+let foldNumOfVowels str =
+    str
+    |> List.ofSeq
+    |> List.fold(fun currentState currentElement -> if (vowelPredicate currentElement) then (List.append currentState [currentElement]) else currentState) []
+let alphabet = "abc"
+printfn "%A" (foldNumOfVowels alphabet)
+//printfn "%A" (foldNumOfVowels "Higher-order functions can take and return functions of any order" [])
 
 //PRIMES are only divisible by itself and 1
 let isPrime n =
@@ -33,10 +40,8 @@ let rec primesUpTo n =
 // |> - Passes the result of the left side to the function on the right side (forward pipe operator).
 let listPrime lst = List.filter isPrime lst
 //listPrime nums
-primesUpTo 10
-
-
-
+printfn "%A" (primesUpTo 100)
+   
 //EX 3.3 FIBONACCI - the next number is the sum of the previous two
 let rec recFibonacci first second count =
     let currentCount = count - 1;
@@ -47,11 +52,8 @@ let rec recFibonacci first second count =
             | 0 -> recFibonacci first 1 currentCount   // if first number is 0
             | _ -> recFibonacci second currentNumber currentCount
 let myFibonaci n = recFibonacci 0 0 n
-myFibonaci 9
+printfn "%A" (myFibonaci 9)
 
-
-
-//EX 3.4
 let doubleNum x = x * 2
 let sqrNum x = x * x
 let pclQuad x = (doubleNum >> doubleNum) x
