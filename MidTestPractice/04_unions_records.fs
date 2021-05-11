@@ -16,8 +16,20 @@ let pclPerimeterUnion shape =
     | RightTriangle(a, b) -> a + b + sqrt(a**2.0 + b**2.0)
     | _ -> 0.0
 
+let pclAreaUnion shape =
+    match shape with
+    | Rectangles(a, b) -> a*b
+    | RightTriangle(a, b) -> 0.5*(a*b)
+    | _ -> 0.0
+
 let pclPerimeterRecord shape =
     match shape with
     | {PclShapeRecord.name = name; PclShapeRecord.a = a; PclShapeRecord.b = b} when name = "rectangle" -> 2.0 * ( a + b)
     | {PclShapeRecord.name = name; PclShapeRecord.a = a; PclShapeRecord.b = b} when name = "right triangle" -> a + b + sqrt(a**2.0 + b**2.0)
+    | _ -> 0.0
+
+let pclAreaRecord shape =
+    match shape with
+    | {PclShapeRecord.name = name; PclShapeRecord.a = a; PclShapeRecord.b = b} when name = "rectangle" -> a*b
+    | {PclShapeRecord.name = name; PclShapeRecord.a = a; PclShapeRecord.b = b} when name = "right triangle" -> 0.5*(a*b)
     | _ -> 0.0
