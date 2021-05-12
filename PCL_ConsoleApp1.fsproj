@@ -29,7 +29,8 @@
     <Compile Include="MidTestPractice\02b_rec_list.fs" />
     <Compile Include="MidTestPractice\02c_fold_map_filter.fs" />
     <Compile Include="MidTestPractice\03_fold_primes_fibonacci.fs" />
-    <Compile Include="MidTestPractice\04_unions_records.fs" />
+    <Compile Include="MidTestPractice\04_05_unions_records.fs" />
+    <Compile Include="MidTestPractice\06.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
