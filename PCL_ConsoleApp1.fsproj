@@ -31,6 +31,7 @@
     <Compile Include="MidTestPractice\03_fold_primes_fibonacci.fs" />
     <Compile Include="MidTestPractice\04_05_unions_records.fs" />
     <Compile Include="MidTestPractice\06.fs" />
+    <Compile Include="MidTestPractice\07_special_calendar.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
