@@ -1,14 +1,17 @@
 ﻿module _01aExercise
 
+// instantiating variables
 let x = 23
 let myName = "Bobby"
 let age = 25
 let country = "Canada"
 let y = 6 + 6
 
-let a = 5 // a = 5
-// NOTE: in here we are redefining the value of a in "a + 5"
-let b = let a = 10 in a + 5 // b = 10 + 5 = 15
+let a = 5
+// (re)defining the value of a in the equation "a + 5"
+let b = 
+    let a = 10 
+    in a + 5 // b = 10 + 5 = 15
 let c = a + b // c = 5 + 15 = 20
 
 let addNum1 number =
@@ -68,6 +71,7 @@ let addXY (x:int) (y:int) =
 printfn "%A" (addXY 5 3)
 //> 
 //5 3
+//8
 //val addXY : x:int -> y:int -> int
 //val it : int = 8
 

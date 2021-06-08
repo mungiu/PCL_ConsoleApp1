@@ -7,11 +7,8 @@
 
   <ItemGroup>
     <Compile Include="ClassWork\TestQuestionAnsweres.fs" />
-    <Compile Include="ClassWork\Session1.fs" />
-    <Compile Include="ClassWork\Exercise2.fs" />
+    <Compile Include="ClassWork\Session1_recursion_factorial_tuples.fs" />
     <Compile Include="ClassWork\Session2_Factorial.fs" />
-    <Compile Include="ClassWork\Exercise2a_StringToUpper.fs" />
-    <Compile Include="ClassWork\Exercise2b_SUM_ADD_TAKE_LIST.fs" />
     <Compile Include="ClassWork\Exercise2c_FOLD_MAP_FILTER.fs" />
     <Compile Include="ClassWork\Session3_CLOSURE_MAP_FILTER_FOLD.fs" />
     <Compile Include="ClassWork\Exercise3_CLOSURE_PRIME_FIBONACCI.fs" />
@@ -30,7 +27,7 @@
     <Compile Include="MidTestPractice\02c_fold_map_filter.fs" />
     <Compile Include="MidTestPractice\03_fold_primes_fibonacci.fs" />
     <Compile Include="MidTestPractice\04_05_unions_records.fs" />
-    <Compile Include="MidTestPractice\06.fs" />
+    <Compile Include="MidTestPractice\06_tuples_records.fs" />
     <Compile Include="MidTestPractice\07_special_calendar.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

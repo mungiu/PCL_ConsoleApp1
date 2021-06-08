@@ -19,4 +19,4 @@ let rec vowelToUpperStrRec (str:string) =
     match str with
     | "" -> ""
     | str -> (vowelToUpper str.[0]).ToString() + vowelToUpperStrRec str.[1..(String.length(str) - 1)]
-vowelToUpperStrRec "Andrei Mungiu"
+printfn "%A" (vowelToUpperStrRec "Andrei Mungiu")

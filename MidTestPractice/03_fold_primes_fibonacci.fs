@@ -1,6 +1,6 @@
 ﻿module _03
 
-let vowelPredicate c =
+let isVowel c =
     match c with
     | 'a' -> true
     | 'e' -> true
@@ -9,20 +9,20 @@ let vowelPredicate c =
     | 'u' -> true
     | c -> false
 
-let rec countNumOfVowels str init =
+let rec countVowels str init =
     match str with
     | "" -> init
-    | _ -> if vowelPredicate str.[0] 
-            then countNumOfVowels (str.[1..String.length str-1]) init + 1 
-            else countNumOfVowels (str.[1..String.length str-1]) init
-printfn "%A" (countNumOfVowels "Higher-order functions can take and return functions of any order" 0)
+    | _ -> if isVowel str.[0] 
+            then countVowels (str.[1..String.length str-1]) init + 1 
+            else countVowels (str.[1..String.length str-1]) init
+printfn "%A" (countVowels "Higher-order functions can take and return functions of any order" 0)
 
-let foldNumOfVowels str =
+let countVowelsWithFold str =
     str
     |> List.ofSeq
-    |> List.fold(fun currentState currentElement -> if (vowelPredicate currentElement) then (List.append currentState [currentElement]) else currentState) []
-let alphabet = "abc"
-printfn "%A" (foldNumOfVowels alphabet)
+    |> List.fold(fun currentState currentElement -> if (isVowel currentElement) then (List.append currentState [currentElement]) else currentState) []
+    |> List.length
+printfn "%A" (countVowelsWithFold "abcdefg")
 //printfn "%A" (foldNumOfVowels "Higher-order functions can take and return functions of any order" [])
 
 //PRIMES are only divisible by itself and 1

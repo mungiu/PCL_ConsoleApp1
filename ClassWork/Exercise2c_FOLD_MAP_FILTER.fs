@@ -3,7 +3,7 @@
 let rec myFold foldFn accumulator iterable =
     match iterable with
     | [] -> accumulator //if empty return accumulator
-    | head::tail -> foldFn head (myFold foldFn 0 tail)
+    | hd::tl -> foldFn hd (myFold foldFn accumulator tl)
 myFold (+) 0 [1; 2; 3] 
 
 
