@@ -24,6 +24,7 @@ let countWordLetterRecords (str:string) =
     let letterCount = wordCount |> Array.sumBy (fun w -> w.Length)
     {wordCount = wordCount.Length; letterCount = letterCount}
 countWordLetterRecords "dsa dsa"
+
 // Example to be used fo Mini Project - CONCURRENCY is achieved here
 // CONCURENCY - important when scalability and large amount of messages are used
 // simple asynchronicity can be used, but that is NOT concurrent
@@ -47,6 +48,9 @@ let PrintAgent =
 
 PrintAgent.Post "11222"
 
+
+
+
 // type of agent
 type Agent<'T> = MailboxProcessor<'T>
 // union type to be sent to agent
@@ -66,6 +70,18 @@ let counterAgent =
             | Count value -> return! loop (n + value)
         }
         loop 0)
+
+counterAgent.Start()
+counterAgent.Post(Count(1))
+counterAgent.Post(Count(1))
+counterAgent.Post(Count(1))
+counterAgent.Post(Count(1))
+counterAgent.Post(Reset)
+counterAgent.Post(Count(1))
+//n = 1, waiting...
+//n = 2, waiting...
+//n = 3, waiting...
+//n = 4, waiting...
 
 // example test with many orders for mini project
 // orderList |> List.map cafeAgent.Post     // printing the list
