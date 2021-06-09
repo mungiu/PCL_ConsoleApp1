@@ -30,6 +30,8 @@ let rec factorial1 x =
     else x * factorial1 (x - 1)
 let num3 = factorial1(10)
 
+
+
 //tuple - a structure where we can mix different types (like one row in a data table)
 let tdata = (11, "February", -5.50)
 // Construction
