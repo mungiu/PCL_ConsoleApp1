@@ -90,3 +90,9 @@ let rec addNum10Rec j k =
     | 0 -> k
     | _ -> addNum10Rec (j-1) (addNum10x k)
 printfn "%A" (addNum10Rec 3 5)
+
+
+let rec factorialPM n = 
+    match n with
+    | 0 -> 1
+    | _ -> n * factorialPM(n-1)

@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Compile Include="ClassWork\TestQuestionAnsweres.fs" />
-    <Compile Include="ClassWork\Session1_recursion_factorial_tuples.fs" />
+    <Compile Include="ClassWork\Session1_rec_factorial_tuple_list.fs" />
     <Compile Include="ClassWork\Session2_Factorial.fs" />
     <Compile Include="ClassWork\Exercise2c_FOLD_MAP_FILTER.fs" />
     <Compile Include="ClassWork\Session3_CLOSURE_MAP_FILTER_FOLD.fs" />
@@ -20,7 +20,7 @@
     <Compile Include="ClassWork\Lesson6_PARALLEL_PROGRAMMING.fs" />
     <Compile Include="ClassWork\Exercise6a_TUPLES_RECORDS_TREES_MAILBOXPROCESSOR.fs" />
     <Compile Include="ClassWork\DTGCafeImproved.fs" />
-    <Compile Include="MidTestPractice\01a_recursion.fs" />
+    <Compile Include="MidTestPractice\01a_rec_factorial.fs" />
     <Compile Include="MidTestPractice\01b_list_concat.fs" />
     <Compile Include="MidTestPractice\02a_strings.fs" />
     <Compile Include="MidTestPractice\02b_rec_list.fs" />
